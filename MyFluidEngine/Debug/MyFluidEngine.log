@@ -1,0 +1,9 @@
+﻿  MyFluidEngine.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: “APIENTRY”: 宏重定义
+C:\Users\27019\source\repos\MyFluidEngine\Dependencies\GLFW\include\GLFW\glfw3.h(123): message : 参见“APIENTRY”的前一个定义
+C:\Users\27019\source\repos\MyFluidEngine\MyFluidEngine\Utils\Transform\transform3.h(11,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\27019\source\repos\MyFluidEngine\MyFluidEngine\Utils\Size\size2-inl.h(11,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\27019\source\repos\MyFluidEngine\MyFluidEngine\MyFluidEngine.cpp(82,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\27019\source\repos\MyFluidEngine\MyFluidEngine\MyFluidEngine.cpp(84,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\27019\source\repos\MyFluidEngine\MyFluidEngine\MyFluidEngine.cpp(109,23): warning C4018: “<”: 有符号/无符号不匹配
+  MyFluidEngine.vcxproj -> C:\Users\27019\source\repos\MyFluidEngine\Debug\MyFluidEngine.exe

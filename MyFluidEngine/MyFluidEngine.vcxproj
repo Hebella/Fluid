@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a3142e25-919a-4a08-8f1a-5ef088171608}</ProjectGuid>
+    <RootNamespace>MyFluidEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;GLEW_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;GLEW_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation\animation.cpp" />
+    <ClCompile Include="Animation\physics_animation.cpp" />
+    <ClCompile Include="Collider\collider2.cpp" />
+    <ClCompile Include="Collider\collider3.cpp" />
+    <ClCompile Include="Collider\rigid_body_collider2.cpp" />
+    <ClCompile Include="Collider\rigid_body_collider3.cpp" />
+    <ClCompile Include="Generator\bcc_lattice_point_generator.cpp" />
+    <ClCompile Include="Generator\point_generator2.cpp" />
+    <ClCompile Include="Generator\point_generator3.cpp" />
+    <ClCompile Include="Generator\triangle_point_generator.cpp" />
+    <ClCompile Include="MyFluidEngine.cpp" />
+    <ClCompile Include="ParticleEmitter\particle_emitter2.cpp" />
+    <ClCompile Include="ParticleEmitter\particle_emitter3.cpp" />
+    <ClCompile Include="ParticleEmitter\point_particle_emitter2.cpp" />
+    <ClCompile Include="ParticleEmitter\point_particle_emitter3.cpp" />
+    <ClCompile Include="ParticleEmitter\volume_particle_emitter2.cpp" />
+    <ClCompile Include="ParticleEmitter\volume_particle_emitter3.cpp" />
+    <ClCompile Include="ParticleSystem\particle_system_data2.cpp" />
+    <ClCompile Include="ParticleSystem\particle_system_data3.cpp" />
+    <ClCompile Include="ParticleSystem\particle_system_solver2.cpp" />
+    <ClCompile Include="ParticleSystem\particle_system_solver3.cpp" />
+    <ClCompile Include="Searcher\point_hash_grid_searcher2.cpp" />
+    <ClCompile Include="Searcher\point_hash_grid_searcher3.cpp" />
+    <ClCompile Include="Searcher\point_neighbor_searcher2.cpp" />
+    <ClCompile Include="Sph\sph_solver2.cpp" />
+    <ClCompile Include="Sph\sph_solver3.cpp" />
+    <ClCompile Include="Sph\sph_system_data2.cpp" />
+    <ClCompile Include="Sph\sph_system_data3.cpp" />
+    <ClCompile Include="Utils\Box\box2.cpp" />
+    <ClCompile Include="Utils\Box\box3.cpp" />
+    <ClCompile Include="Utils\cnpy.cpp" />
+    <ClCompile Include="Utils\Field\constant_vector_field2.cpp" />
+    <ClCompile Include="Utils\Field\constant_vector_field3.cpp" />
+    <ClCompile Include="Utils\Field\field2.cpp" />
+    <ClCompile Include="Utils\Field\field3.cpp" />
+    <ClCompile Include="Utils\Field\vector_field2.cpp" />
+    <ClCompile Include="Utils\Field\vector_field3.cpp" />
+    <ClCompile Include="Utils\Plane\plane2.cpp" />
+    <ClCompile Include="Utils\Plane\plane3.cpp" />
+    <ClCompile Include="Utils\pystring.cpp" />
+    <ClCompile Include="Utils\Sphere\sphere2.cpp" />
+    <ClCompile Include="Utils\Sphere\sphere3.cpp" />
+    <ClCompile Include="Utils\Surface\implicit_surface2.cpp" />
+    <ClCompile Include="Utils\Surface\implicit_surface3.cpp" />
+    <ClCompile Include="Utils\Surface\implicit_surface_set2.cpp" />
+    <ClCompile Include="Utils\Surface\surface2.cpp" />
+    <ClCompile Include="Utils\Surface\surface3.cpp" />
+    <ClCompile Include="Utils\Surface\surface_to_implicit2.cpp" />
+    <ClCompile Include="Utils\Surface\surface_to_implicit3.cpp" />
+    <ClCompile Include="Utils\timer.cpp" />
+    <ClCompile Include="Utils\Triangle\triangle3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation\animation.h" />
+    <ClInclude Include="Animation\physics_animation.h" />
+    <ClInclude Include="Animation\SimpleMassSpringAnimation.h" />
+    <ClInclude Include="Collider\collider2.h" />
+    <ClInclude Include="Collider\collider3.h" />
+    <ClInclude Include="Collider\rigid_body_collider2.h" />
+    <ClInclude Include="Collider\rigid_body_collider3.h" />
+    <ClInclude Include="Generator\bcc_lattice_point_generator.h" />
+    <ClInclude Include="Generator\point_generator2.h" />
+    <ClInclude Include="Generator\point_generator3.h" />
+    <ClInclude Include="Generator\triangle_point_generator.h" />
+    <ClInclude Include="MassSpringTest.h" />
+    <ClInclude Include="ParticleEmitter\particle_emitter2.h" />
+    <ClInclude Include="ParticleEmitter\particle_emitter3.h" />
+    <ClInclude Include="ParticleEmitter\point_particle_emitter2.h" />
+    <ClInclude Include="ParticleEmitter\point_particle_emitter3.h" />
+    <ClInclude Include="ParticleEmitter\volume_particle_emitter2.h" />
+    <ClInclude Include="ParticleEmitter\volume_particle_emitter3.h" />
+    <ClInclude Include="ParticleSystemTest.h" />
+    <ClInclude Include="ParticleSystem\particle_system_data2.h" />
+    <ClInclude Include="ParticleSystem\particle_system_data3.h" />
+    <ClInclude Include="ParticleSystem\particle_system_solver2.h" />
+    <ClInclude Include="ParticleSystem\particle_system_solver3.h" />
+    <ClInclude Include="Utils\QueryEngine\intersection_query_engine2.h" />
+    <ClInclude Include="Utils\QueryEngine\intersection_query_engine3.h" />
+    <ClInclude Include="Utils\QueryEngine\nearest_neighbor_query_engine2.h" />
+    <ClInclude Include="Utils\QueryEngine\nearest_neighbor_query_engine3.h" />
+    <ClInclude Include="Searcher\point_hash_grid_searcher2.h" />
+    <ClInclude Include="Searcher\point_hash_grid_searcher3.h" />
+    <ClInclude Include="Searcher\point_neighbor_searcher2.h" />
+    <ClInclude Include="Searcher\point_neighbor_searcher3.h" />
+    <ClInclude Include="SphSolver3Test.h" />
+    <ClInclude Include="Sph\sph_kernels2-inl.h" />
+    <ClInclude Include="Sph\sph_kernels2.h" />
+    <ClInclude Include="Sph\sph_kernels3-inl.h" />
+    <ClInclude Include="Sph\sph_kernels3.h" />
+    <ClInclude Include="Sph\sph_solver2.h" />
+    <ClInclude Include="Sph\sph_solver3.h" />
+    <ClInclude Include="Sph\sph_system_data2.h" />
+    <ClInclude Include="Sph\sph_system_data3.h" />
+    <ClInclude Include="Utils\Array\array.h" />
+    <ClInclude Include="Utils\Array\array1-inl.h" />
+    <ClInclude Include="Utils\Array\array1.h" />
+    <ClInclude Include="Utils\Array\array2-inl.h" />
+    <ClInclude Include="Utils\Array\array2.h" />
+    <ClInclude Include="Utils\Array\array3-inl.h" />
+    <ClInclude Include="Utils\Array\array3.h" />
+    <ClInclude Include="Utils\Array\array_accessor.h" />
+    <ClInclude Include="Utils\Array\array_accessor1-inl.h" />
+    <ClInclude Include="Utils\Array\array_accessor1.h" />
+    <ClInclude Include="Utils\Array\array_accessor2-inl.h" />
+    <ClInclude Include="Utils\Array\array_accessor2.h" />
+    <ClInclude Include="Utils\Array\array_accessor3-inl.h" />
+    <ClInclude Include="Utils\Array\array_accessor3.h" />
+    <ClInclude Include="Utils\Array\array_utils-inl.h" />
+    <ClInclude Include="Utils\Array\array_utils.h" />
+    <ClInclude Include="Utils\BoundingBox\bounding_box-inl.h" />
+    <ClInclude Include="Utils\BoundingBox\bounding_box.h" />
+    <ClInclude Include="Utils\BoundingBox\bounding_box2-inl.h" />
+    <ClInclude Include="Utils\BoundingBox\bounding_box2.h" />
+    <ClInclude Include="Utils\BoundingBox\bounding_box3-inl.h" />
+    <ClInclude Include="Utils\BoundingBox\bounding_box3.h" />
+    <ClInclude Include="Utils\Box\box2.h" />
+    <ClInclude Include="Utils\Box\box3.h" />
+    <ClInclude Include="Utils\Bvh\bvh2-inl.h" />
+    <ClInclude Include="Utils\Bvh\bvh2.h" />
+    <ClInclude Include="Utils\Bvh\bvh3-inl.h" />
+    <ClInclude Include="Utils\Bvh\bvh3.h" />
+    <ClInclude Include="Utils\cnpy.h" />
+    <ClInclude Include="Utils\constants.h" />
+    <ClInclude Include="Utils\Field\constant_vector_field2.h" />
+    <ClInclude Include="Utils\Field\constant_vector_field3.h" />
+    <ClInclude Include="Utils\Field\field2.h" />
+    <ClInclude Include="Utils\Field\field3.h" />
+    <ClInclude Include="Utils\Field\scalar_field2.h" />
+    <ClInclude Include="Utils\Field\scalar_field3.h" />
+    <ClInclude Include="Utils\Field\vector_field2.h" />
+    <ClInclude Include="Utils\Field\vector_field3.h" />
+    <ClInclude Include="Utils\functors-inl.h" />
+    <ClInclude Include="Utils\functors.h" />
+    <ClInclude Include="Utils\macros.h" />
+    <ClInclude Include="Utils\math_utils-inl.h" />
+    <ClInclude Include="Utils\math_utils.h" />
+    <ClInclude Include="Utils\Matrix\matrix-inl.h" />
+    <ClInclude Include="Utils\Matrix\matrix.h" />
+    <ClInclude Include="Utils\Matrix\matrix2x2-inl.h" />
+    <ClInclude Include="Utils\Matrix\matrix2x2.h" />
+    <ClInclude Include="Utils\Matrix\matrix3x3-inl.h" />
+    <ClInclude Include="Utils\Matrix\matrix3x3.h" />
+    <ClInclude Include="Utils\Matrix\matrix4x4-inl.h" />
+    <ClInclude Include="Utils\Matrix\matrix4x4.h" />
+    <ClInclude Include="Utils\Matrix\matrix_expression-inl.h" />
+    <ClInclude Include="Utils\Matrix\matrix_expression.h" />
+    <ClInclude Include="Utils\parallel-inl.h" />
+    <ClInclude Include="Utils\parallel.h" />
+    <ClInclude Include="Utils\pch.h" />
+    <ClInclude Include="Utils\physics_helpers.h" />
+    <ClInclude Include="Utils\Plane\plane2.h" />
+    <ClInclude Include="Utils\Plane\plane3.h" />
+    <ClInclude Include="Utils\Point\point-inl.h" />
+    <ClInclude Include="Utils\Point\point.h" />
+    <ClInclude Include="Utils\Point\point2-inl.h" />
+    <ClInclude Include="Utils\Point\point2.h" />
+    <ClInclude Include="Utils\Point\point3-inl.h" />
+    <ClInclude Include="Utils\Point\point3.h" />
+    <ClInclude Include="Utils\private_helpers.h" />
+    <ClInclude Include="Utils\pystring.h" />
+    <ClInclude Include="Utils\quaternion-inl.h" />
+    <ClInclude Include="Utils\quaternion.h" />
+    <ClInclude Include="Utils\Ray\ray.h" />
+    <ClInclude Include="Utils\Ray\ray2-inl.h" />
+    <ClInclude Include="Utils\Ray\ray2.h" />
+    <ClInclude Include="Utils\Ray\ray3-inl.h" />
+    <ClInclude Include="Utils\Ray\ray3.h" />
+    <ClInclude Include="Utils\samplers-inl.h" />
+    <ClInclude Include="Utils\samplers.h" />
+    <ClInclude Include="Utils\Size\size.h" />
+    <ClInclude Include="Utils\Size\size2-inl.h" />
+    <ClInclude Include="Utils\Size\size2.h" />
+    <ClInclude Include="Utils\Size\size3-inl.h" />
+    <ClInclude Include="Utils\Size\size3.h" />
+    <ClInclude Include="Utils\Sphere\sphere2.h" />
+    <ClInclude Include="Utils\Sphere\sphere3.h" />
+    <ClInclude Include="Utils\Surface\implicit_surface2.h" />
+    <ClInclude Include="Utils\Surface\implicit_surface3.h" />
+    <ClInclude Include="Utils\Surface\implicit_surface_set2.h" />
+    <ClInclude Include="Utils\Surface\surface2.h" />
+    <ClInclude Include="Utils\Surface\surface3.h" />
+    <ClInclude Include="Utils\Surface\surface_to_implicit2.h" />
+    <ClInclude Include="Utils\Surface\surface_to_implicit3.h" />
+    <ClInclude Include="Utils\timer.h" />
+    <ClInclude Include="Utils\tiny_obj_loader.h" />
+    <ClInclude Include="Utils\Transform\transform2-inl.h" />
+    <ClInclude Include="Utils\Transform\transform2.h" />
+    <ClInclude Include="Utils\Transform\transform3-inl.h" />
+    <ClInclude Include="Utils\Transform\transform3.h" />
+    <ClInclude Include="Utils\Triangle\triangle3.h" />
+    <ClInclude Include="Utils\triangle_mesh3.h" />
+    <ClInclude Include="Utils\type_helpers.h" />
+    <ClInclude Include="Utils\Vector\vector-inl.h" />
+    <ClInclude Include="Utils\Vector\vector.h" />
+    <ClInclude Include="Utils\Vector\vector2-inl.h" />
+    <ClInclude Include="Utils\Vector\vector2.h" />
+    <ClInclude Include="Utils\Vector\vector3-inl.h" />
+    <ClInclude Include="Utils\Vector\vector3.h" />
+    <ClInclude Include="Utils\Vector\vector4-inl.h" />
+    <ClInclude Include="Utils\Vector\vector4.h" />
+    <ClInclude Include="Utils\Vector\vector_expression-inl.h" />
+    <ClInclude Include="Utils\Vector\vector_expression.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
