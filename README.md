@@ -17,6 +17,7 @@ This is a project recording the results produced during the development process 
 + **Collider** 
 
     implements rigid body collider like the ground.
+    
 ![image](https://github.com/Hebella/Fluid/blob/master/ParticleSystemTest.gif)
 
 ## Cloth Simulation (Mass Spring System)
@@ -25,6 +26,7 @@ This is a project recording the results produced during the development process 
 + **Mass Spring System**
 
     creates a grid of particles and links them with springs. The states of particles are updated based on Hooke's law.
+    
 ![image](https://github.com/Hebella/Fluid/blob/master/ClothSimulationTest.gif)
 ## 3D Fluid Simulators
 + **SPH(Smoothed-particle hydrodynamics) solver**
