@@ -12,7 +12,10 @@ This is a project recording the results produced during the development process 
 ![image](https://github.com/Hebella/Fluid/blob/master/ParticleSystemTest.gif)
 
 ## Cloth Simulation (Mass Spring System)
+
+## Features
++ **Mass Spring System:** creates a grid of particles and links them with springs. The states of particles are updated based on Hooke's law.
 ![image](https://github.com/Hebella/Fluid/blob/master/ClothSimulationTest.gif)
 ## 3D Fluid Simulators
-Result produced by SPH(Smoothed-particle hydrodynamics) solver:
++ **SPH(Smoothed-particle hydrodynamics) solver**
 ![image](https://github.com/Hebella/Fluid/blob/master/SphSolverTest_2.gif)
