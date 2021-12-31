@@ -6,6 +6,7 @@ This is a project recording the results produced during the development process 
 
 ### Features
 + **Particle Emitter**
+
     emits particles from a single point in given direction, speed, and spreading angle.
 + **Particle System** 
 
