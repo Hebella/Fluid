@@ -7,7 +7,7 @@ This is a project recording the results produced during the development process 
 ### Features
 + **Particle Emitter:**
 
-<small>emits particles from a single point in given direction, speed, and spreading angle.</small>
+    <font size = 4>emits particles from a single point in given direction, speed, and spreading angle.</font>
 + **Particle System:** stores properties and states of particles including mass, radius, positions, velocities and forces.
 + **Physically-based Animation:** calculates the system's states based on factors like internal and external forces exerted on the particles, and updates the physical system per given time interval.
 + **Collider:** implements rigid body collider like the ground.
