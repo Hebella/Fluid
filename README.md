@@ -5,10 +5,12 @@ This is a project recording the results produced during the development process 
 ## Particle System Examples
 
 ### Features
-+ **Particle Emitter:**
++ **Particle Emitter**
 
-    <font size = 4>emits particles from a single point in given direction, speed, and spreading angle.</font>
-+ **Particle System:** stores properties and states of particles including mass, radius, positions, velocities and forces.
+    <font size = "4">emits particles from a single point in given direction, speed, and spreading angle.</font>
++ **Particle System** 
+
+    stores properties and states of particles including mass, radius, positions, velocities and forces.
 + **Physically-based Animation:** calculates the system's states based on factors like internal and external forces exerted on the particles, and updates the physical system per given time interval.
 + **Collider:** implements rigid body collider like the ground.
 ![image](https://github.com/Hebella/Fluid/blob/master/ParticleSystemTest.gif)
