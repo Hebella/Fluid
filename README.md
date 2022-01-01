@@ -33,4 +33,4 @@ This is a project recording the results produced during the development process 
 
 ![image](https://github.com/Hebella/Fluid/blob/master/SphSolverTest_2.gif)
 
-![image](https://github.com/Hebella/Fluid/blob/master/FluidSimulationTest_2.gif)
+![image](https://github.com/Hebella/Fluid/blob/master/FluidSimulationTest.gif)
